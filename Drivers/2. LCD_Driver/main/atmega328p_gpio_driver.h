@@ -1,5 +1,5 @@
-#ifndef GPIO_DRIVER_H
-#define GPIO_DRIVER_H
+#ifndef __ATMEGA328P_GPIO_DRIVER_H__
+#define __ATMEGA328P_GPIO_DRIVER_H__
 
 #include <avr/io.h>
 #include <stdint.h>
@@ -39,4 +39,4 @@ void GPIO_writePort(volatile uint8_t *port, uint8_t state);
 }
 #endif
 
-#endif // GPIO_DRIVER_H
+#endif // __ATMEGA328P_GPIO_DRIVER_H__
