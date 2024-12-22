@@ -1,5 +1,5 @@
-#ifndef GPIO_DRIVER_H
-#define GPIO_DRIVER_H
+#ifndef __ATMEGA328P_GPIO_DRIVER_H__
+#define __ATMEGA328P_GPIO_DRIVER_H__
 
 #include <avr/io.h>
 #include <stdint.h>
@@ -29,14 +29,14 @@ typedef struct {
 } GPIOPin;
 
 // Function prototypes
-void GPIO_init(GPIOPin pin, GPIODirection direction);
-GPIOState GPIO_read(GPIOPin pin);
-void GPIO_write(GPIOPin pin, GPIOState state);
-void GPIO_toggle(GPIOPin pin);
-void GPIO_writePort(volatile uint8_t *port, uint8_t state);
+void GPIO_Init(GPIOPin pin, GPIODirection direction);
+GPIOState GPIO_ReadPin(GPIOPin pin);
+void GPIO_WritePin(GPIOPin pin, GPIOState state);
+void GPIO_Toggle(GPIOPin pin);
+void GPIO_WritePort(volatile uint8_t *port, uint8_t state);
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif // GPIO_DRIVER_H
+#endif // __ATMEGA328P_GPIO_DRIVER_H__
