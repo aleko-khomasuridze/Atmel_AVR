@@ -45,4 +45,4 @@ typedef struct {
 }
 #endif
 
-#endif //__ATMEGA328P_GPIO_DRIVER_H__
+#endif //__ATMEGA328P_LCD_DRIVER_H__
